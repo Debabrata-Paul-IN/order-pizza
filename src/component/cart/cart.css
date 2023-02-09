@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+.cart-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-column-gap: 1.2rem ;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.item-name-wrapper{
+    display: flex;
+    align-items: center;
+    
+}
+
+.item-name-wrapper>img{
+    width: 45px;
+    margin-right: 10px;
+}
+
+.item-name{
+    line-height: 1.2rem; 
+}
+
+.qnty-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.price-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.delete-btn{
+    background-color: transparent;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.delete-btn svg{
+    fill: rgb(248, 59, 34);;
+   
+}
+
+.delete-btn-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.qnty{
+    display: flex;
+    justify-content: center;
+    width: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.price{
+    font-size: 0.9rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.grand-total-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.grand-price{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+hr{
+    border-top: 1px solid rgb(238, 233, 233);
+}
+
+.order-now{
+    font-weight: 800;
+}
+
+.empty-cart{
+    width: 100%;
+}
+
+.empty-cart>img{
+    width: 70%;
+}
+
+@media screen and (max-width:450px) {
+    .item-name{
+        font-size: 0.7rem;
+        line-height: 0.9rem;
+        font-weight: bold;
+    }
+    
+    .cart-wrapper{
+        display: flex;
+    }
+    
+    .cart-wrapper>div:first-child{
+        width: 40%;
+    }
+    .cart-wrapper>div{
+        width: 20%;
+    }
+}
