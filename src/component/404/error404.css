@@ -1,0 +1,15 @@
+.errContainer {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+.errImg {
+  height: 20rem;
+}
+.errContainer p{
+    margin-top: 3rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
